@@ -1,0 +1,24 @@
+{
+    "name": "aminurdev/crud_generator",
+    "description": "laravel crud generator",
+    "type": "library",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Aminurdev\\CrudGenerator\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "aminur93",
+            "email": "aminurrashid126@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {},
+    "autoload-dev": {
+        "psr-4": {
+            "Aminurdev\\CrudGenerator\\": "src/"
+        }
+    }
+}
