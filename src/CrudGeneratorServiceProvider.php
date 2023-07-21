@@ -14,9 +14,9 @@ class CrudGeneratorServiceProvider extends ServiceProvider{
 
         $this->publishes([
             __DIR__.'/views' => resource_path('views/vendor/CrudGenerator'),
-            __DIR__.'/Models' => resource_path('Models/CrudGenerator'),
-            __DIR__.'/Http/Controllers' => resource_path('Http/Controllers/CrudGenerator'),
-            __DIR__.'/database/migrations' => resource_path('database/migrations/CrudGenerator')
+            __DIR__.'/Models' => app_path('Models/CrudGenerator'),
+            __DIR__.'/Http/Controllers' => app_path('Http/Controllers/CrudGenerator'),
+            __DIR__.'/database/migrations' => database_path('database/migrations/CrudGenerator')
         ]);
     }
 
