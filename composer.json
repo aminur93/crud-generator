@@ -20,5 +20,12 @@
         "psr-4": {
             "Aminurdev\\CrudGenerator\\": "src/"
         }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Aminurdev\\CrudGenerator\\CrudGeneratorServiceProvider"
+            ]
+        }
     }
 }
