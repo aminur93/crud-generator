@@ -13,7 +13,8 @@ class CrudGeneratorServiceProvider extends ServiceProvider{
         $this->loadMigrationsFrom(__DIR__.'/database/migrations');
 
         $this->publishes([
-            __DIR__.'/views' => resource_path('views/vendor/CrudGenerator')
+            __DIR__.'/views' => resource_path('views/vendor/CrudGenerator'),
+            __DIR__.'/Models' => resource_path('Models/vendor/CrudGenerator')
         ]);
 
         // $this->publishes([
