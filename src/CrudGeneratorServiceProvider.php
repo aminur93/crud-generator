@@ -14,20 +14,10 @@ class CrudGeneratorServiceProvider extends ServiceProvider{
 
         $this->publishes([
             __DIR__.'/views' => resource_path('views/vendor/CrudGenerator'),
-            __DIR__.'/Models' => resource_path('Models/vendor/CrudGenerator')
+            __DIR__.'/Models' => resource_path('Models/CrudGenerator'),
+            __DIR__.'/Http/Controllers' => resource_path('Http/Controllers/CrudGenerator'),
+            __DIR__.'/database/migrations' => resource_path('database/migrations/CrudGenerator')
         ]);
-
-        // $this->publishes([
-        //     __DIR__.'/Models/Employee.php' => app_path('Employee.php'),
-        // ], 'CrudGenerator-model');
-
-        // $this->publishes([
-        //     __DIR__.'/src/Http/Controllers/CrudGeneratorController.php' => app_path('Http/Controllers/CrudGeneratorController.php'),
-        // ], 'CrudGenerator-controller');
-
-        // $this->publishes([
-        //     __DIR__.'/database/migrations/2023_07_21_162655_create_employees_table.php' => database_path('migrations/2023_07_21_162655_create_employees_table.php'),
-        // ], 'CrudGenerator-migrations');
     }
 
     public function register()
